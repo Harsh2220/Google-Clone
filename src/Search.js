@@ -3,14 +3,23 @@ import { useHistory } from 'react-router';
 import './Search.css';
 import { Button } from '@material-ui/core';
 import { Mic, SearchOutlined } from '@material-ui/icons';
+import { useStatevalue } from './StateProvider';
+import { actionTypes } from './reducer';
 
 function Search() {
 
+    const [{}, dispatch ] = useStatevalue("");
     const [input, setInput] = useState("");
     const history = useHistory();
 
     const search = (e) => {
         e.preventDefault();
+
+        dispatch({
+            type: actionTypes.SET_SEARCH_TERM,
+            term: input,
+        })
+
         history.push("/search");
     }
 
