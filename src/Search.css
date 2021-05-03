@@ -1,0 +1,39 @@
+.search_input{
+    display: flex;
+    align-items: center;
+    height: 20px;
+    width: 550px;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-radius:999px;
+}
+
+.search_input > input{
+    flex: 1;
+    border: none;
+    outline-width: 0px;
+    margin-left: 10px;
+    font-size: medium;
+}
+
+.search_input > .MuiSvgIcon-root{
+    color: gray;
+}
+
+.search_buttons{
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.search_buttons > button{
+    margin: 5px;
+    padding: 7px 15px;
+    background-color: #f8f8f8;
+    border: 1px solid white;
+    text-transform: inherit;
+}
+
+.search_buttons > button:hover{
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
