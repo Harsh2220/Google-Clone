@@ -2,9 +2,12 @@ import React from 'react';
 import { BrowserRouter, Route, Router, Switch } from 'react-router-dom';
 import './App.css';
 import Home from './Home';
+import reducer, { initialstate } from './reducer';
+import { StateProvider } from './StateProvider';
 
 function App() {
   return (
+    <StateProvider initialstate={initialstate} reducer={reducer}>
     <div className="App">
       <BrowserRouter>
         <Switch>
@@ -17,6 +20,7 @@ function App() {
         </Switch>
       </BrowserRouter>
     </div>
+    </StateProvider>
   );
 }
 
