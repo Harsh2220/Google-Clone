@@ -1,8 +1,6 @@
 import React from 'react';
 import { useStatevalue } from './StateProvider';
 
-// AIzaSyCPisi3CfmBy9Qhp55gxUHfAeIsNd7MXFE
-
 function SearchPage() {
 
     const [{term}, dispatch ] = useStatevalue();
