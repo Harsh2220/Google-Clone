@@ -3,7 +3,7 @@ import { useStatevalue } from './StateProvider';
 
 function SearchPage() {
 
-    const [{term}, dispatch ] = useStatevalue();
+    const [{ term }, dispatch] = useStatevalue();
 
     return (
         <div className="searchPage">
