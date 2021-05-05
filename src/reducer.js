@@ -14,11 +14,11 @@ const reducer = (state, action) => {
             return{
             ...state,
             term: action.term,
-           }
+           };
     
         default:
             return state;
     }
-}
+};
 
 export default reducer;

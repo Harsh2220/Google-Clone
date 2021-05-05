@@ -3,12 +3,12 @@ import { useHistory } from 'react-router';
 import './Search.css';
 import { Button } from '@material-ui/core';
 import { Mic, SearchOutlined } from '@material-ui/icons';
-import { useStatevalue } from './StateProvider';
+import { useStateValue } from './StateProvider';
 import { actionTypes } from './reducer';
 
 function Search() {
 
-    const [{}, dispatch ] = useStatevalue("");
+    const [{}, dispatch ] = useStateValue("");
     const [input, setInput] = useState("");
     const history = useHistory();
 
@@ -17,7 +17,7 @@ function Search() {
 
         dispatch({
             type: actionTypes.SET_SEARCH_TERM,
-            term: input,
+            term: input
         })
 
         history.push("/search");
