@@ -17,7 +17,7 @@ function Home() {
                 <Avatar />
             </div>
             <div className="home_body">
-                <img src="https://www.jobalign.com/wp-content/uploads/2018/01/google-logo-png-hd-11.png"/>
+                <img src="https://www.jobalign.com/wp-content/uploads/2018/01/google-logo-png-hd-11.png" alt="image"/>
                 <div className="home_input">
                     <Search/>
                 </div>
