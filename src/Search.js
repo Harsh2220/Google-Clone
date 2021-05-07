@@ -8,7 +8,8 @@ import { actionTypes } from './reducer';
 
 function Search() {
 
-    const [{}, dispatch ] = useStateValue("");
+    const [ state , dispatch ] = useStateValue();
+
     const [input, setInput] = useState("");
     const history = useHistory();
 
