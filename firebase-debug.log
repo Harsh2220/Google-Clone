@@ -1,0 +1,43 @@
+[debug] [2021-05-10T16:15:56.024Z] ----------------------------------------------------------------------
+[debug] [2021-05-10T16:15:56.026Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Harsh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-05-10T16:15:56.026Z] CLI Version:   9.10.2
+[debug] [2021-05-10T16:15:56.026Z] Platform:      win32
+[debug] [2021-05-10T16:15:56.027Z] Node Version:  v14.15.4
+[debug] [2021-05-10T16:15:56.027Z] Time:          Mon May 10 2021 21:45:56 GMT+0530 (India Standard Time)
+[debug] [2021-05-10T16:15:56.027Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-05-10T16:15:56.034Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-05-10T16:15:56.035Z] > authorizing via signed-in user (harshgajjar145@gmail.com)
+[debug] [2021-05-10T16:15:56.035Z] [iam] checking project clone-a290c for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-05-10T16:15:56.037Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/clone-a290c:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-05-10T16:15:58.233Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 10 May 2021 16:16:50 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1302","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-10T16:15:58.238Z] > refreshing access token with scopes: []
+[debug] [2021-05-10T16:15:58.238Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-10T16:16:00.685Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 10 May 2021 16:16:53 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-10T16:16:00.779Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-a290c [none]
+[debug] [2021-05-10T16:16:02.639Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-a290c 200
+[debug] [2021-05-10T16:16:02.639Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-a290c {"projectId":"clone-a290c","projectNumber":"84662111283","displayName":"Google-clone","name":"projects/clone-a290c","resources":{"hostingSite":"clone-a290c"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'clone-a290c'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2021-05-10T16:16:02.649Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-05-10T16:16:02.649Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-10T16:16:04.022Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Mon, 10 May 2021 16:16:57 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-10T16:16:04.096Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/clone-a290c/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-05-10T16:16:08.366Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 10 May 2021 16:17:01 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[clone-a290c]: beginning deploy... 
+[info] i  hosting[clone-a290c]: found 1 files in build 
+[debug] [2021-05-10T16:16:08.381Z] [hosting] hash cache [YnVpbGQ] not populated
+[debug] [2021-05-10T16:16:08.389Z] > refreshing access token with scopes: []
+[debug] [2021-05-10T16:16:08.390Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-05-10T16:16:08.393Z] [hosting] hash cache [YnVpbGQ] stored for 1 files
+[debug] [2021-05-10T16:16:08.394Z] [hosting][hash queue][FINAL] {"max":6,"min":6,"avg":6,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":12}
+[debug] [2021-05-10T16:16:09.301Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Mon, 10 May 2021 16:17:02 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-05-10T16:16:09.388Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/clone-a290c/versions/703102cc0ed8ce26:populateFiles [none]
+[debug] [2021-05-10T16:16:09.388Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/clone-a290c/versions/703102cc0ed8ce26:populateFiles {"files":{"/index.html":"b218cb06ca024a5734364afbd8aa156e1c4009a2b9674f2293274d2d0b7ca12b"}}
