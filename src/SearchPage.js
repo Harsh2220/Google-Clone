@@ -23,7 +23,7 @@ function SearchPage() {
                     </Link>
 
                     <div className="searchPage_searchbar">
-                        <InSearch value={term} />
+                        <InSearch />
                     </div>
                 </div>
 

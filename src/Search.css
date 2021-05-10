@@ -6,6 +6,7 @@
     padding: 10px;
     border: 1px solid lightgray;
     border-radius:999px;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
 }
 
 .search_input > input{
@@ -36,4 +37,8 @@
 
 .search_buttons > button:hover{
     box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.search_hidebutton{
+    display: none !important;
 }

@@ -6,7 +6,7 @@ import { Mic, SearchOutlined } from '@material-ui/icons';
 import { useStateValue } from './StateProvider';
 import { actionTypes } from './reducer';
 
-function Search() {
+function Search({ hideButtons = false}) {
 
     const [state, dispatch] = useStateValue();
 
@@ -28,13 +28,22 @@ function Search() {
         <form className="search">
             <div className="search_input">
                 <SearchOutlined />
-                <input type="text" value={input} onChange={(e) => setInput(e.target.value)} />
+                <input type="text" value={input} onChange={(e) => setInput(e.target.value)}/>
                 <Mic />
             </div>
-            <div className="search_buttons">
-                <Button type="submit" variant="outlined" onClick={search}>Google Search</Button>
-                <Button variant="outlined">I'm Feeling Lucky</Button>
-            </div>
+
+            {!hideButtons ? (
+                <div className="search_buttons">
+                    <Button type="submit" variant="outlined" onClick={search}>Google Search</Button>
+                    <Button variant="outlined">I'm Feeling Lucky</Button>
+                </div>
+            ) : (
+                <div className="search_buttons">
+                    <Button className="search_hidebutton" type="submit" variant="outlined" onClick={search}>Google Search</Button>
+                    <Button className="search_hidebutton" variant="outlined">I'm Feeling Lucky</Button>
+                </div>
+            )}
+
         </form>
     )
 }

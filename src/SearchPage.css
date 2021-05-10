@@ -22,7 +22,6 @@
 
 .searchPage_main{
     display: flex;
-    /* align-items: center; */
 }
 
 .searchPage_apps{
@@ -41,7 +40,7 @@
 }
 
 .searchPage_result{
-    margin: 40px 0;
+    margin: 20px 0;
 }
 
 .searchPage_resultCounts{
