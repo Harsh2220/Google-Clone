@@ -1,6 +1,6 @@
 import React from 'react';
 import './InSearch.css';
-import { BookOutlined, ImageOutlined, LocalOfferOutlined, Mic, MoreVertOutlined, ReceiptOutlined, SearchOutlined } from '@material-ui/icons';
+import { BookOutlined, ImageOutlined, LocalOfferOutlined, MoreVertOutlined, ReceiptOutlined, SearchOutlined } from '@material-ui/icons';
 import { Link } from 'react-router-dom';
 import Search from './Search';
 

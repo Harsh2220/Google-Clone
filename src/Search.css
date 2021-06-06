@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     height: 20px;
-    width: 550px;
     padding: 10px;
     border: 1px solid lightgray;
     border-radius:999px;
@@ -41,4 +40,22 @@
 
 .search_hidebutton{
     display: none !important;
+}
+
+@media (min-width:600px) {
+    .search_input{
+        width: 550px;
+    }
+}
+
+@media (max-width:600px) {
+    .search_input{
+        width: 400px;
+    }
+}
+
+@media (max-width:425px) {
+    .search_input{
+        width:300px;
+    }
 }

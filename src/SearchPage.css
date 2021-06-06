@@ -49,7 +49,8 @@
 }
 
 .searchPage_results{
-    max-width: 650px;
+    max-width: 625px;
+    min-width: 425px;
     margin-top: 10px;
     margin-left: 190px;
     margin-bottom: 80px;
